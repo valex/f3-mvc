@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default" role="navigation">
+    <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li <check if="{{ @page_head == 'User List' }}">class="active"</check>>
+                <a href="{{ @BASE.'/' }}">
+                    <span class="glyphicon glyphicon-th-list"></span> Read
+                </a>
+            </li>
+            <li <check if="{{ @page_head == 'Create User' }}">class="active"</check>>
+                <a href="{{ @BASE.'/user/create' }}">
+                    <span class="glyphicon glyphicon-plus-sign"></span> Create
+                </a>
+            </li>
+            <check if="{{ @page_head == 'Update User' }}">
+                <li class="active">
+                    <a href="javascript:void(0);">
+                        <span class="glyphicon glyphicon-plus-sign"></span> Update
+                    </a>
+                </li>
+            </check>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
